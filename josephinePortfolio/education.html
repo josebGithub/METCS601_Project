@@ -5,22 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/styles.css" type="text/css" rel="stylesheet">
-    <title>Work Experiences</title>
+     <!-- This is a development version of Vue.js! -->
+     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+     <!-- import es6 module in navBarComponent.js -->
+     <script src="scripts/navBarComponent.js" type="module"></script>
+     <script src="scripts/education.js" defer> </script>
+    <title>Education</title>
 </head>
 <body>
   <div class="education-page">
-   <nav> 
-      <ul>
-          <li> <a href="index.html">Home</a></li>
-          <li> <a href="bio.html">Bio</a> </li>
-          <li><a href="education.html">Education</a> </li>
-          <li><a href="experience.html">Work Experience</a></li>
-          <li><a href="skills.html">Skills </a> </li>
-          <li><a href="presentation.html">My Presentation</a></li>
-      </ul>
-  </nav>
-  <div class="education-header">
-    <img class="education-image" src="images/education.jpg" alt="Education Page" />
+      <div id="navbar">
+         <c-navbar v-bind:nav_links_prop="links"/>
+         </c-navbar>
+      </div>
+    <div class="education-header">
+      <img class="education-image" src="images/education.jpg" alt="Education Page" />
     <header>
         <h1>Education</h1>
     </header>
@@ -31,74 +30,11 @@
    </div>
    <div class="education-details">
    <hr/>
-   
-    <table>
-        <thead>
-         <tr>
-            <th>Institution</th>
-            <td></td>
-            <th>Concentration</th>
-            <th>Years</th>
-         </tr>
-        </thead>
-        <tbody>
-         <tr>
-             <td>University Of Boston - MET</td>
-             <td></td>
-             <td>Master Of Science in Software Development</td>
-             <td>Sept 2020 - present</td>
-         </tr>
-         <tr>
-            <td>University Of Manitoba, Canada</td>
-            <td></td>
-            <td>Bachelor Of Science - General</td>
-            <td>1994</td>
-         </tr>
-         <tr>
-            <td>University Of Minnesota(Coursera Certification)</td>
-            <td></td>
-            <td>Introduction to Software Testing</td>
-            <td>2020</td>
-         </tr>
-         <tr>
-            <td>University Of Maryland, College Park(Coursera Certification)</td>
-            <td></td>
-            <td>Programming Mobile Applications for Android Handheld Systems</td>
-            <td>2014</td>
-         </tr>
-         <tr>
-            <td>John Hopkins University(Coursera Certification)</td>
-            <td></td>
-            <td>Computing with Data Analysis</td>
-            <td>2013</td>
-         </tr>
-         <tr>
-            <td>Rice University(Coursera Certification)</td>
-            <td></td>
-            <td>An Introduction to Interactive Programming in Python</td>
-            <td>2013</td>
-         </tr>
-         <tr>
-            <td>Praxis Training Institute(Certification)</td>
-            <td></td>
-            <td>Internet E-Commerce Developer</td>
-            <td>2001</td>
-         </tr>
-         <tr>
-            <td>Vocational Training Council(Certification)</td>
-            <td></td>
-            <td>Developing Application Programs under Oracle 7.0</td>
-            <td>1997</td>
-         </tr>
-         <tr>
-            <td>JOS Education Center(Certification)</td>
-            <td></td>
-            <td>Application Development Using INFORMIX-4GL</td>
-            <td>1995</td>
-         </tr>
-        </tbody>
-       </table>
-
+     <section>
+        <div id ="education-data"></div>
+        <div id ="error-message"></div>
+     </section>
+     
      <section>
        <h3>Award</h3>
        <p><q>Team excellence award</q> from Standard Chartered</p>

@@ -279,34 +279,45 @@
     margin: 1rem auto;
   }
 
+  th {
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: blue;
+  }
+
+
   td {
     padding:0.2rem 0.5rem;
     font-size: 0.7rem;
+    text-align: center;
    /* border-radius: 6px; */
    /* border: 1px solid red; */
   }
 
-  /* Set the properties for the fonts in the table. */
+
+  /**
+
   .table-h1 {
     font-size:0.85rem;
     font-weight: bold;
   }
 
-  /* Set the properties for the fonts in the table. */
+  
   .table-h2 {
     font-weight:bold;
     color: var(--chetwodeblue);
   }
 
-  /* Set the properties for the fonts in the table. */
+  
   .table-h3 {
     font-style:italic ;
   }
 
-  /* Set the properties for the fonts in the table. */
+ 
   .table-date {
     font-weight:bold;
   }
+   **/
 
   /* Main page image (img) styles - set the image width and border properties. */
   .main-page-image > img {
