@@ -1,5 +1,5 @@
 /* To get the skills data from JSON file, process it and print it to the DOM. Catch the errors if there is any. */
-async function getEducationInfo(url) {
+async function getSkillsInfo(url) {
     // fetch the url
     await fetch(url)
       //get your data here, and check for the response status. If it's not 200, throw an error
@@ -19,45 +19,31 @@ async function getEducationInfo(url) {
     return response.json();
   }
   
+  function addSpanClass(element, level) {
+      for (var i=0; i < level; i++)
+      {
+       var span = document.createElement("span");
+       span.className='fa fa-star checked';
+       element.appendChild(span);
+      }
+  }
+
+ 
   /* Process the data and print it to the table */
   const process = function(data) {
 
-    for (heading of Object.keys(data.skills)) 
-    {
-        document.getElementById("programming ")
-    }
+    var ele=document.getElementById("skills-level");
     
-
-  
-    //Create a table
-    var skillsDiv = document.getElementById("skills-data");
-    var table = document.createElement("table");
-    var tr=table.insertRow(-1);
-  
-  //  var keys=Object.keys(data);
-  //  var subkeys = Object.keys(data[keys[0]][0]);
-    
-    for (heading of Object.keys(data.skills[0]))
-    {
-      let th = document.createElement("th");
-      th.innerHTML = heading.toUpperCase();
-      tr.appendChild(th);  
-    }
-  
-  
-    for ( ed of data.education)
+    for ( s of data.skills)
         {
-          tr = table.insertRow(-1);
-          for (field of Object.keys(ed))
-          {
-              tr.insertCell(-1).innerHTML = ed[field];
-          }
+            var skillDiv = document.createElement("div");
+            skillDiv.setAttribute("class", "skillsstar");
+            ele.appendChild(skillDiv);
+            skillDiv.innerHTML+=s.skill;
+           // ele.appendChild(document.createElement("div"));
+            addSpanClass(skillDiv, s.level);
+           // ele.appendChild(document.createElement("div"));
         }
-  
-    table.setAttribute("class", "education-table");
-    educationDiv.innerHTML = "";
-    educationDiv.appendChild(table);
-  
   }
     
     /* Print the error message to the DOM */
@@ -66,6 +52,6 @@ async function getEducationInfo(url) {
          errorMsg.innerHTML = err;
     }
   
-    getEducationInfo('./data/education.json');
+    getSkillsInfo('./data/skills.json');
   
     

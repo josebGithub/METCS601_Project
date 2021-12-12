@@ -58,6 +58,11 @@
     grid-area: skillsHeader;
   }
 
+  /*declare skills-description for grid */
+  .skills-description {
+    grid-area: skillsdescription;
+  }
+
   /* delcare skills-details for grid */
   .skills-details {
     grid-area: skillsDetails;
@@ -333,7 +338,27 @@
   }
 
   
+  .checked {
+    color : var(--lightpurple);
+  }
 
+  #skills-level {
+     display:flex;
+     align-items:right;
+     justify-content: right;
+     top: 10px;
+     bottom:10px;
+  }
+
+  #skills-level div {
+    width:100px;
+    height:100px;
+  }
+
+  .skillsstar {
+    margin-right:100px;
+    color: var(--lightblue);
+  }
 
   /**
 
@@ -424,15 +449,20 @@
      set the properties and the layouot of the grid. */
      .skills-page {
       display: grid;
-      column-gap:0;
-      row-gap:3rem;
+      gap:5rem;
+      grid-template-columns: repeat(2,1fr);
       grid-template-areas: 
-      "nav"
-      "skillsHeader"
-      "skillsDetails" 
-      "footer"
+      "nav nav"
+      "skillsHeader skillsHeader"
+      "skillsdescription skillsDetails"
+      "footer footer";
+      align-items: start;
     }
 
+    .skills-description {
+
+    }
+    
     /* Presentation page styles - set the display to use CSS grid.
      set the properties and the layouot of the grid. */
      .presentation-page {
@@ -608,8 +638,8 @@
    }
 
    .skills-image {
-    width: 100%;
-    height: 35rem;
+    width: auto;
+    height: auto;
    }
 
    /* Move the content to the center. */
