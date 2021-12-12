@@ -5,22 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <!-- This is a development version of Vue.js! -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- import es6 module in navBarComponent.js -->
+    <script src="scripts/navBarComponent.js" type="module"></script>
     <script src="scripts/welcome.js"> </script>
     <title>Josephine But Portfolio</title>
 </head>
 <body>
     <div class="main-page">
       <header class="page-header">
-        <nav> 
-            <ul>
-                <li> <a href="index.html">Home</a></li>
-                <li> <a href="bio.html">Bio</a> </li>
-                <li><a href="education.html">Education</a> </li>
-                <li><a href="experience.html">Work Experience</a></li>
-                <li><a href="skills.html">Skills </a> </li>
-                <li><a href="presentation.html">My Presentation</a></li>
-            </ul>
-        </nav>
+        <div id="navbar">
+            <c-navbar v-bind:nav_links_prop="links"/>
+            </c-navbar>
+        </div>
       </header>
        <div class="main-page-image">
             <img class="image-small" src="images/beach_640.jpg" alt="Image for screen size less than 640px">
