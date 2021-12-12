@@ -13,6 +13,7 @@
   --mediumblue:#5c85d6;
   --lightblue: #80aaff;
   --chetwodeblue:#7575a3;
+  --greencolor: rgb(54, 133, 54);
 }
 
 /* All fonts should be Helvetica, Arial and sans-serif */
@@ -273,6 +274,7 @@
   }
 
   /* Set the properties of the table. */
+  /**
   .table {
     border-collapse: separate;
     border-spacing: 1rem;
@@ -290,9 +292,47 @@
     padding:0.2rem 0.5rem;
     font-size: 0.7rem;
     text-align: center;
-   /* border-radius: 6px; */
-   /* border: 1px solid red; */
   }
+  **/
+
+  .table {
+    font-family:'Courier New', Courier, monospace;
+    border-collapse:collapse;
+    width:100%;
+  }
+
+  th {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    border: 0.5rem solid --lightgray;
+    padding:1rem;
+    color: var(--bluecolor);
+  }
+
+  td {
+    border: 0.5rem solid --lightgray;
+    padding:1rem;
+  }
+
+  tr:nth-child(even){background-color: var(--lightpurple);}
+  tr:hover {background-color: var(--lightgray);}
+
+
+  th{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    text-align: left;
+    background-color: var(--greencolor);
+    color: white;
+  }
+  
+  .education-table {
+    border-collapse:collapse;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  
 
 
   /**
@@ -491,20 +531,7 @@
       height:45rem;
     }
 
-   /* Set the properties of the table. */
-   .table {
-      border-collapse: separate;
-      border-spacing: 1rem;
-      margin: 1rem auto;
-    }
-
-    td {
-      padding:1rem 1.2rem;
-      font-size: 1rem;
-      /* border-radius: 6px; */
-      /* border: 1px solid red; */
-    }
-
+   
      /* Set the properties for the fonts in the table. */
      .table-h1 {
       font-size: 1.3rem;
@@ -604,20 +631,7 @@
     width:60rem;
     height:65rem;
   }
-    /* Set the properties of the table. */
-    .table {
-      border-collapse: separate;
-      border-spacing: 1rem;
-      margin: 1rem auto;
-    }
-
-    td {
-      padding:1rem 1.2rem;
-      font-size: 1rem;
-      /* border-radius: 6px; */
-      /* border: 1px solid red; */
-    }
-
+  
      /* Set the properties for the fonts in the table. */
      .table-h1 {
       font-size: 1.3rem;

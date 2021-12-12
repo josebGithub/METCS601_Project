@@ -3,7 +3,7 @@
       {
               "institution": "University Of Boston-MET",
               "concentration":"Master Of Science in Software Development",
-              "type":"degree",
+              "type":"Degree",
               "year":"Sept 2020-present"
       },
       {
@@ -51,7 +51,7 @@
       {
           "institution": "University Of Manitoba, Canada",
           "concentration":"Bachelor Of Science - General",
-          "type":"degree",
+          "type":"Degree",
           "year":"1994"
       }
   ]

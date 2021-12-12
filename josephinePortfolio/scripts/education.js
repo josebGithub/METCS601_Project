@@ -1,4 +1,4 @@
-/* To get the degree data from JSON file, process it and print it to the DOM. Catch the errors if there is any. */
+/* To get the education data from JSON file, process it and print it to the DOM. Catch the errors if there is any. */
 async function getEducationInfo(url) {
   // fetch the url
   await fetch(url)
@@ -27,9 +27,6 @@ const process = function(data) {
   var table = document.createElement("table");
   var tr=table.insertRow(-1);
 
-  var keys=Object.keys(data);
-  var subkeys = Object.keys(data[keys[0]][0]);
-
   for (heading of Object.keys(data.education[0]))
   {
     let th = document.createElement("th");
@@ -47,7 +44,7 @@ const process = function(data) {
         }
       }
 
-  table.setAttribute("id", "display-degree");
+  table.setAttribute("class", "education-table");
   educationDiv.innerHTML = "";
   educationDiv.appendChild(table);
 
