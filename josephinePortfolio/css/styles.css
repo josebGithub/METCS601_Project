@@ -78,14 +78,14 @@
     grid-area: educationDetails;
   }
 
-  /* delcare presentation-header for grid */
-  .presentation-header {
-    grid-area: presentationHeader;
+  /* delcare contact-header for grid */
+  .contact-header {
+    grid-area: contactHeader;
   }
 
-  /* delcare presentation-video for grid */
-  .presentation-video {
-    grid-area: presentationVideo;
+  /* delcare contact-video for grid */
+  .contact-form {
+    grid-area: contactForm;
   }
 
   /*declare bio-header for grid */
@@ -135,7 +135,7 @@
     font-family :monospace;
     font-size: 1.3rem;
     text-align: center;
-    color : var(--blackcolor);
+    color : var(--mediumblue);
     font-style: italic;
     font-weight: bold;
   }
@@ -249,8 +249,8 @@
     height:auto;
   }
 
-   /* Set the presentation image properties. */
-   .presentation-image {
+   /* Set the contact image properties. */
+   .contact-image {
     width:23rem;
     height:27rem;
     padding:1rem;
@@ -276,6 +276,7 @@
     text-align: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
+    color:var(--mediumblue);
   }
 
   /* Set the properties of the table. */
@@ -459,20 +460,16 @@
       align-items: start;
     }
 
-    .skills-description {
-
-    }
-    
     /* Presentation page styles - set the display to use CSS grid.
      set the properties and the layouot of the grid. */
-     .presentation-page {
+     .contact-page {
       display: grid;
       column-gap:0;
       row-gap:3rem;
       grid-template-areas: 
       "nav"
-      "presentationHeader"
-      "presentationVideo" 
+      "contactHeader"
+      "contactForm" 
       "footer"
     }
 
