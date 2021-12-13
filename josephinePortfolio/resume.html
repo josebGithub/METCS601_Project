@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+     <!-- This is a development version of Vue.js! -->
+     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+     <!-- import es6 module in navBarComponent.js -->
+     <script src="scripts/navBarComponent.js" type="module"></script>
+    <title>Resume</title>
+</head>
+<body>
+    <div class="resume-page">
+        <div id="navbar">
+           <c-navbar v-bind:nav_links_prop="links"/>
+           </c-navbar>
+        </div>
+        <div class="resume">
+            <div class="resume-display">
+                <h1>Resume</h1>
+                <embed src = " data/resume_PDF.pdf" type="application/pdf"></embed>
+            </div>
+        </div>
+        <footer class="page-footer">
+            <address class="address">
+                <p>Contact: <span class="author-name">Josephine But, </span>
+                <a href="mailto:josbut@bu.edu">josbut@bu.edu</a></p>
+                <p>Connect : 
+                <a href="https://linkedin.com/in/josephine-but-85539b82" target="_blank">Linkedin</a></p>
+            </address>
+        </footer> 
+    </div>
+</body>
+</html>

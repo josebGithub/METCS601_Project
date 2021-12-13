@@ -41,9 +41,9 @@ new Vue(
          },
          {
             id:4,
-            icon:"experience icon",
-            text: "Experience",
-            link: "experience.html"
+            icon:"resume icon",
+            text: "Resume",
+            link: "resume.html"
          },
          {
             id:5,
@@ -53,9 +53,9 @@ new Vue(
          },
          {
             id:6,
-            icon:"presentation icon",
-            text: "Presentation",
-            link: "presentation.html"
+            icon:"contact icon",
+            text: "Contact",
+            link: "contact.html"
          }
       ]
     }

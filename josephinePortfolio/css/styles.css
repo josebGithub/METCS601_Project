@@ -83,7 +83,7 @@
     grid-area: contactHeader;
   }
 
-  /* delcare contact-video for grid */
+  /* delcare contact-form for grid */
   .contact-form {
     grid-area: contactForm;
   }
@@ -97,6 +97,12 @@
    .bio-details {
     grid-area: bioDetails;
   }
+
+  /*declare resume for grid */
+  .resume {
+    grid-area: resume;
+  }
+
 
   /* Heading 1 styles - set the font family and color */ 
   h1 {
@@ -185,7 +191,7 @@
   nav > ul > li > a {
     color: var(--blackcolor);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 1rem;
     margin:2rem;
     transition: .3s background-color;
@@ -195,6 +201,7 @@
      mouse hover to the link. */
   nav li:hover, nav li:active {
     background-color: var(--lightpurple);
+    width:12rem;
   }
 
 
@@ -310,14 +317,14 @@
   th {
     font-family:'Courier New', Courier, monospace;
     font-size: 1.2rem;
-    border: 0.5rem solid --lightgray;
-    padding:1rem;
+    border: 0.1rem solid lightgrey;
+    padding: 10px;
     color: var(--bluecolor);
   }
 
   td {
-    border: 0.5rem solid --lightgray;
-    padding:1rem;
+    border: 0.1rem solid lightgrey;
+    padding: 10px;
   }
 
   tr:nth-child(even){
@@ -351,7 +358,7 @@
     background-color: white;
   }
 
-  .contact-table tr:hover tr:not(:nth-last-child
+  .contact-table tr:hover tr:not(:nth-last-child)
   {
     background-color: var(--lightgray);
   } 
@@ -485,8 +492,7 @@
       "footer"
     }
 
-    /* Presentation page styles - set the display to use CSS grid.
-     set the properties and the layouot of the grid. */
+    /* Contact page styles - set the display to use CSS grid.Set the properties and the layouot of the grid. */
      .contact-page {
       display: grid;
       column-gap:0;
@@ -498,7 +504,44 @@
       "footer"
     }
 
-   
+
+    /* Resume page styles - set the display to use CSS grid.Set the properties and the layouot of the grid. */
+    .resume-page {
+      display: grid;
+      column-gap:0;
+      row-gap:3rem;
+      grid-template-areas: 
+      "nav"
+      "resume"
+      "footer"
+    }
+
+    .resume {
+      padding: 40px;
+      position: relative;
+      background: #FFF;
+      margin: 20px 0 0 0;
+      height: 300px;
+      width: 1100px;
+      
+    }
+
+    .resume-display {
+      width:820px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    
+    .resume embed {
+      align-items: center;
+      width: 100%;
+      height: 100rem
+    }
+    
+  
+
+  
 
 
 /* Device width is greater than 640px and less than 1280px, set the grid properties and layout. 
