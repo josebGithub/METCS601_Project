@@ -320,8 +320,12 @@
     padding:1rem;
   }
 
-  tr:nth-child(even){background-color: var(--lightpurple);}
-  tr:hover {background-color: var(--lightgray);}
+  tr:nth-child(even){
+    background-color: var(--lightpurple);
+  }
+  tr:hover {
+    background-color: var(--lightgray);
+  }
 
 
   th{
@@ -342,6 +346,15 @@
   .checked {
     color : var(--lightpurple);
   }
+
+  .contact-table tr:nth-child(even){
+    background-color: white;
+  }
+
+  .contact-table tr:hover tr:not(:nth-last-child
+  {
+    background-color: var(--lightgray);
+  } 
 
   #skills-level {
      display:flex;
@@ -448,6 +461,7 @@
 
    /* Skills page styles - set the display to use CSS grid.
      set the properties and the layouot of the grid. */
+     /**
      .skills-page {
       display: grid;
       gap:5rem;
@@ -458,6 +472,17 @@
       "skillsdescription skillsDetails"
       "footer footer";
       align-items: start;
+    } **/
+
+    .skills-page {
+      display: grid;
+      gap:5rem;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-areas: 
+      "nav"
+      "skillsHeader"
+      "skillsdescription skillsDetails"
+      "footer"
     }
 
     /* Presentation page styles - set the display to use CSS grid.

@@ -38,7 +38,8 @@ function validateForm() {
     var nameRegexpr=/^[a-zA-Z]*$/;
     //var emailRegexpr=/^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
     var emailRegexpr=/^[^@]+@\w+(\.\w+)+\w$/;
-    var phoneNoRegexpr=/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+    //var phoneNoRegexpr=/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+    var phoneNoRegexpr=/^[0-9]{3}-[0-9]{3}-[0-9]{4}/;
   
 
     
@@ -93,8 +94,7 @@ function validateForm() {
 
     if (!isEmptyField(phone, phoneLabelId))
     { 
-        window.alert("Phone number : "+phone);
-        if (!phoneNoRegexpr(phone))
+        if (!phoneNoRegexpr.test(phone))
         {
             errorMessage("Your phone number format is wrong!");
             return false;
