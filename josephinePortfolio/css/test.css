@@ -1,0 +1,94 @@
+/* Heading 1 styles - set the font family and color */ 
+h1 {
+    font-family : Serif, sans-serif, Arial;
+    color : var(--maincolor);
+    text-align: center;
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  /* Heading 2 styles - set the font family and color. */
+  h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color : var(--bluecolor);
+    margin: 3rem;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  /* Heading 3 styles - set the font family and color. */
+  h3 {
+    font-family :cursive;
+    font-size: 1.5rem;
+    text-align: left;
+    color : var(--lightblue);
+    text-indent: 1rem;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+   /* Heading 4 styles - set the font family and color. */
+   h4 {
+    font-family :monospace;
+    font-size: 1.3rem;
+    text-align: center;
+    color : var(--mediumblue);
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  
+
+  #skills-level {
+    display:flex;
+    align-items:right;
+    justify-content: right;
+    top: 10px;
+    bottom:10px;
+ }
+
+ #skills-level div {
+   width:100px;
+   height:100px;
+ }
+
+ .skillsstar {
+   margin-right:100px;
+   color: var(--lightblue);
+ }
+
+  /* declare footer for grid */
+  .page-footer {
+    grid-area: footer; 
+    margin-top: 6rem;
+}
+
+ /* delcare skills-header for grid */
+ .skills-header {
+    grid-area: skillsHeader;
+  }
+
+  /*declare skills-description for grid */
+  .skills-description {
+    grid-area: skillsdescription;
+  }
+
+  /* delcare skills-details for grid */
+  .skills-details {
+    grid-area: skillsDetails;
+  }
+
+ .skills-page {
+    display: grid;
+    column-gap:0;
+    row-gap:3rem;
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas: 
+    "nav nav"
+    "skillsHeader skillsHeader"
+    "skillsdescription skillsDetails"
+    "footer footer"
+  }

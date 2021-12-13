@@ -9,12 +9,16 @@
             "level":4
         },
         {  
-            "skill":"C",
+            "skill":"HTML/CSS",
             "level":3
         },
         {
-             "skill":"SQLite",
-             "level":4 
-        }
+             "skill":"Javascript",
+             "level":3
+        },
+        {
+            "skill":"SQLite",
+            "level":4 
+       }
     ]
   }

@@ -40,8 +40,10 @@ async function getSkillsInfo(url) {
             skillDiv.setAttribute("class", "skillsstar");
             ele.appendChild(skillDiv);
             skillDiv.innerHTML+=s.skill;
+            var div = document.createElement("div");
+            skillDiv.appendChild(div);
            // ele.appendChild(document.createElement("div"));
-            addSpanClass(skillDiv, s.level);
+            addSpanClass(div, s.level);
            // ele.appendChild(document.createElement("div"));
         }
   }

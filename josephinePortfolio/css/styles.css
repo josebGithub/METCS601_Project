@@ -21,6 +21,10 @@
     font-family :Arial, Helvetica, sans-serif;
   }
 
+  /* declare Navigation bar for grid */
+  #navbar {
+    grid-area: nav;
+  }
   /* declare header for grid */
   .page-header {
       grid-area: header;
@@ -210,7 +214,9 @@
   .main-page-image {
     grid-area: page-image;
     padding: 2rem;
-    width: 80%;
+    max-width:100%;
+    height:auto;
+    /* width: 80%;*/
   }
 
   /* Don't display medium and large image in main page */
@@ -251,10 +257,12 @@
   }
 
   /* Set the skills image responsive to screen size. */
+  /**
   .skills-image {
     width:98%;
     height:auto;
   }
+  **/
 
    /* Set the contact image properties. */
    .contact-image {
@@ -364,7 +372,7 @@
   } 
 
   #skills-level {
-     display:flex;
+     display:block;
      align-items:right;
      justify-content: right;
      top: 10px;
@@ -373,12 +381,24 @@
 
   #skills-level div {
     width:100px;
-    height:100px;
+    height:3.3rem;
   }
 
+  .skills-description p {
+    text-align: justify;
+    line-height: 1.9;
+  }
+
+
   .skillsstar {
-    margin-right:100px;
-    color: var(--lightblue);
+    margin-right:10px;
+    width:3rem;
+    height:5rem;
+    color: var(--mediumblue);
+  }
+
+  .skills-description h3 {
+    color: darkblue;
   }
 
   /**
@@ -466,30 +486,16 @@
       "footer"
     }
 
-   /* Skills page styles - set the display to use CSS grid.
-     set the properties and the layouot of the grid. */
-     /**
-     .skills-page {
+    .skills-page {
       display: grid;
-      gap:5rem;
-      grid-template-columns: repeat(2,1fr);
+      row-gap:3rem;
+      grid-gap:6rem;
+      grid-template-columns: 2fr 2fr;
       grid-template-areas: 
       "nav nav"
       "skillsHeader skillsHeader"
       "skillsdescription skillsDetails"
-      "footer footer";
-      align-items: start;
-    } **/
-
-    .skills-page {
-      display: grid;
-      gap:5rem;
-      grid-template-columns: repeat(2,1fr);
-      grid-template-areas: 
-      "nav"
-      "skillsHeader"
-      "skillsdescription skillsDetails"
-      "footer"
+      "footer footer"
     }
 
     /* Contact page styles - set the display to use CSS grid.Set the properties and the layouot of the grid. */
@@ -702,10 +708,12 @@
     border: 12px solid var(--mediumpurple)
    }
 
+   /**
    .skills-image {
     width: auto;
     height: auto;
    }
+**/
 
    /* Move the content to the center. */
    .content {
