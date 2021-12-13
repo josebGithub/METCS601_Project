@@ -7,6 +7,12 @@ const lastNameLabelId = "lnamelabel";
 const emailLabelId = "emaillabel";
 const phoneId ="phoneno";
 const phoneLabelId = "phonelabel"
+const tuesday="tuesday";
+const thursday="thursday";
+const saturday="saturday";
+const firstslot="firstslot";
+const secondslot="secondslot";
+const thirdslot="thirdslot";
 
 
 /* Check if the value of the field is empty or not */
@@ -100,6 +106,19 @@ function validateForm() {
             return false;
         } 
     } else { return false;}
+
+    if ((!document.getElementById(tuesday).checked) && (!document.getElementById(thursday).checked) && (!document.getElementById(saturday).checked))
+    {
+            errorMessage("Please select a pefer day to contact!");
+            return false;
+    }
+
+    if ((!document.getElementById(firstslot).checked) && (!document.getElementById(secondslot).checked) && (!document.getElementById(thirdslot).checked))
+    {
+            errorMessage("Please select a prefer time to contact!");
+            return false;
+    }
+
 }
 
 /* Reset the form when the reset button is clicked */

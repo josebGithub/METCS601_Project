@@ -1,6 +1,6 @@
 /* Set the styles for the form */
 form {
-    width: 40rem;
+    width: 37rem;
     height:36rem;
     margin:0 auto; 
     padding: 1rem;
@@ -45,6 +45,12 @@ input[type=submit], input[type=reset] {
     color : steelblue;
     border-radius: 1.5rem;
     border: 0.8rem solid;
+}
+
+#form-buttons {
+   vertical-align:middle;
+   text-align: center;
+   padding:3rem;
 }
 
 /* Change the color of the color when hover*/

@@ -9,6 +9,7 @@
      <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
      <!-- import es6 module in navBarComponent.js -->
      <script src="scripts/navBarComponent.js" type="module"></script>
+     <script src="scripts/resume.js" defer> </script>
     <title>Resume</title>
 </head>
 <body>
@@ -17,12 +18,76 @@
            <c-navbar v-bind:nav_links_prop="links"/>
            </c-navbar>
         </div>
+        <div class="resume-header">
+            <header>
+                <h1>Resume</h1>
+                <!--
+                <section>
+                    <h4><q>“When I think about what part of my college experience came back in my work experience, I feel like it was learning how to read deeper, learning how to keep filling the movie up with more and more resonance.” </q></h4>
+                    <p class="author-quote">- Jodie Foster</p>
+                </section>
+                -->
+            </header>
+            <div class="experience-highlights">
+                <h3>Highlights</h3>
+                <ul>
+                    <li> Nine Years of professional experience as a Software Developer and QA Engineer.</li>
+                    <li> Solid backgroundds in software design, development, implementation, testing and documentation.</li>
+                    <li>Strong problem solving and analysis skills and results oriented with strength in organization and interpersonal skills.</li>
+                    <li>Self-motived and an innovative thinker, consistently pursing new challenges to stretch abilities.</li>
+                </ul>
+            </div>  
+            <hr/>
+        </div>
+        <div class="resume">
+            <h3>Work Experience</h3>
+            <button class="collapse-section">Eworld Soluction Inc. </button>
+            <div class="detail">
+                <table class="experience-tbl">
+                    <tr>
+                       <td><h6>Technical Recruiter</h6></td>
+                       <td><p>Identify and fill job openings and keep records of applications. Communicate with the candidates and help them to fill in the job openings.Develop and implement the add-on google scripts for the management which in turns save their work in searching the candidates from one google <br>sheet to another sheet.</p></td>
+                    </tr>
+                </table>
+            </div>
+            <button class="collapse-section">Natural Convergence Inc.(Broadview Network)   </button>
+            <div class="detail">
+                <table class="experience-tbl">
+                    <tr>
+                       <td><h6>Application Software Designer</h6></td>
+                       <td><p>Designed and developed automation tools for the design group and product verification team. Designed and developed test automation tool for the web-based administration system of a carrier grade IP telephony service. Developed test plans and procedures to WebAdmin with different web traffic to provide comparative platform performance, performance testing and product scalability characterization. Analyst the results from the test and generate reports to the management. Develped tests and execute tests for WebAdmin against different platforms.</p></td>
+                    </tr>
+                </table>
+            </div>
+            <button class="collapse-section">Isosceles Information Solutions Inc.</button>
+            <div class="detail">
+                <table class="experience-tbl">
+                    <tr>
+                       <td><h6>Java Programmer</h6></td>
+                       <td><p>Recoded the application from ground-zero.Gathered, analyzed user requirements, added features and enhancements to apply user requirements. Deployed and installed the application in different platforms.</p></td>
+                    </tr>
+                </table>
+            </div>
+            <button class="collapse-section">Sybridge Technologies Inc.</button>
+            <div class="detail">
+                <table class="experience-tbl">
+                    <tr>
+                       <td><h6>Intermediate Software Developer</h6></td>
+                       <td><p>Ported a carrier-grade B2B Bridging Infrastructure system to Sun Solaris platform. Designed and developed new functionalities for the system. Participated in the design of sub-systems.Defined classes, interfaces, applications and implemented them based on design for a new subsystem.</p></td>
+                    </tr>
+                </table>
+            </div>
+                
+        </div>
+
+        <!--
         <div class="resume">
             <div class="resume-display">
                 <h1>Resume</h1>
                 <embed src = " data/resume_PDF.pdf" type="application/pdf"></embed>
             </div>
         </div>
+        -->
         <footer class="page-footer">
             <address class="address">
                 <p>Contact: <span class="author-name">Josephine But, </span>
