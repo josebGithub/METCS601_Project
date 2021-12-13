@@ -23,7 +23,7 @@ async function getSkillsInfo(url) {
       for (var i=0; i < level; i++)
       {
        var span = document.createElement("span");
-       span.className='fa fa-star checked';
+       span.className='fa fa-star fa-lg checked';
        element.appendChild(span);
       }
   }
