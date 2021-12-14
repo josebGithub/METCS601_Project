@@ -1,3 +1,5 @@
+
+/** To collapse the section content */
 function collapseSection() {
 
     var sectionid = document.getElementsByClassName("collapse-section");

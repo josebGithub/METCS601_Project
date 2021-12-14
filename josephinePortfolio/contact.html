@@ -16,7 +16,7 @@
 <body>
     <div class="contact-page">
         <div id="navbar">
-            <c-navbar v-bind:nav_links_prop="links"/>
+            <c-navbar v-bind:nav_links_prop="links">
             </c-navbar>
         </div>
         <div class="contact-header">
@@ -34,7 +34,7 @@
         <div class="contact">
             <hr/>
             <section class="contact-form">
-                <h1>Contact Form</h1>
+                <h3>Contact Form</h3>
                 <h4>Please fill in all the fields.</h4>
                 <form action ="https://reqbin.com/echo/post/form" method="post" onsubmit="return validateForm()" id="assign4Form" name="contactForm">
                 <!--
