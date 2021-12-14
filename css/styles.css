@@ -474,6 +474,14 @@ input[type=checkbox]:checked+label {
   grid-area: resume;
 }
 
+.experience-tbl {
+  border-collapse: collapse;
+}
+
+.experience-tbl td {
+  border-style:hidden!important;
+}
+
  /* Resume page styles - set the display to use CSS grid.Set the properties and the layouot of the grid. */
  .resume-page {
   display: grid;
