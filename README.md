@@ -13,7 +13,7 @@ In my project, I build a portfolio website using HTML5, CSS3, javascript and Vue
 
 # Web Pages Details
 - Home Page
-![Home Page!](images/home_page.jpg)
+![Home Page!](josephinePortfolio/images/home_page.jpg)
 <br>
 The home page is a welcome page. Navigation bar will be changed from horizontal to vertical when window size is getting smaller. Different navigation bar and pictures will be shown in different window size as well as colors, font style and font size.
 <br>
