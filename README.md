@@ -16,7 +16,7 @@ In my project, I build a portfolio website using HTML5, CSS3, javascript and Vue
 The home page is a welcome page. Navigation bar will be changed from horizontal to vertical when window size is getting smaller. Different navigation bar and pictures will be shown in different window size as well as colors, font style and font size.
 <br>
 Navigation bar component is created using Vue so it can be reused on each of the page. Data is stored in JSON file, use javascript to get the data from JSON file and process it and generate a navigation bar to the DOM.
-<br>
+
 - Bio Page
 ![Bio Page!](josephinePortfolio/images/bio_page.jpg)    
 This is the biography page. It tells more about me, my background, my present and my interests. It has my photo on this page and the photo will change based on different size of the window.
