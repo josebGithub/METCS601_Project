@@ -17,30 +17,21 @@ The home page is a welcome page. Navigation bar will be changed from horizontal 
 <br>
 Navigation bar component is created using Vue so it can be reused on each of the page. Data is stored in JSON file, use javascript to get the data from JSON file and process it and generate a navigation bar to the DOM.
 <br>
-<br>
 - Bio Page
 ![Bio Page!](josephinePortfolio/images/bio_page.jpg)    
 This is the biography page. It tells more about me, my background, my present and my interests. It has my photo on this page and the photo will change based on different size of the window.
-
-<br>
 <br>
 - Education Page
 ![Education Page!](josephinePortfolio/images/education_page.jpg)
 Education page contains a table of my education history. The color of the rows will be changed when the user hover the pointer to the row. Data is stored in JSON file, use javascript to get the data from JSON file and process it and generate a education history table with heading.
-
-<br>
 <br>
 - Resume Page
 ![Resume Page!](josephinePortfolio/images/resume_page.jpg)
 Resume page has a list of collapsible sections for my work experience. User can click on the section heading(the company name) to expand to see the detail of my work experience. Use HTML5 and CSS3 to develop this page.
-
-<br>
 <br>
 - Skills Page
 ![Skills Page!](josephinePortfolio/images/skills_page.jpg)
 Skills page has my story and my skills sections. Two sections are displayed side by side using grid. Skills shows a list of skills with star ratings. Skills data is stored in JSON file, use javascript to get the data from JSON and process it and generate the skill with star rating. 
-
-<br>
 <br>
 - Contact Page
 ![Contact Page!](josephinePortfolio/images/contact_page.jpg)
