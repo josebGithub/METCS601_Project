@@ -27,7 +27,7 @@ Education page contains a table of my education history. The color of the rows w
 
 - Resume Page
 ![Resume Page!](josephinePortfolio/images/resume_page.jpg)
-Resume page has a list of collapsible sections for my work experience. User can click on the section heading(the company name) to expand to see the detail of my work experience. Use HTML5 and CSS3 to develop this page.
+Resume page has a list of collapsible sections for my work experience. User can click on the section heading(the company name) to expand to see the detail of my work experience. Use HTML5, CSS3 and javascript to develop this page.
 
 - Skills Page
 ![Skills Page!](josephinePortfolio/images/skills_page.jpg)
@@ -35,7 +35,7 @@ Skills page has my story and my skills sections. Two sections are displayed side
 
 - Contact Page
 ![Contact Page!](josephinePortfolio/images/contact_page.jpg)
-Contact page is a page for the user to contact me. It includes a contact form for the user to fill in. Input form validation for each field is available. Error message will display to the DOM. Form cannot be submitted until all the fields are filled. Success page should be returned after submission.
+Contact page is a page for the user to contact me. It includes a contact form for the user to fill in. Input form validation for each field is available. Error messages will be displayed to the DOM if empty or invalid value is validated. Form cannot be submitted until all the fields are filled. Success page should be returned after submission.
 
 
 ## Requirement
