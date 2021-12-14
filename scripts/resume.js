@@ -1,8 +1,8 @@
 
 /** To collapse the section content */
-function collapseSection() {
+function collapseSection(sectionClassName) {
 
-    var sectionid = document.getElementsByClassName("collapse-section");
+ var sectionid = document.getElementsByClassName(sectionClassName);
     var i;
 
 for (i = 0; i < sectionid.length; i++) {
@@ -19,6 +19,6 @@ for (i = 0; i < sectionid.length; i++) {
 
 }
 
-collapseSection();
+collapseSection("collapse-section");
 
 
