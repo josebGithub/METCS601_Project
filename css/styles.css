@@ -514,7 +514,6 @@ input[type=checkbox]:checked+label {
 
 .skills-page {
   display: grid;
-  row-gap:0;
   grid-column-gap: 5rem;
   grid-template-columns: 2fr 2fr;
   grid-template-areas: 
@@ -790,16 +789,8 @@ input[type=checkbox]:checked+label {
    /* Move the footer to the center. */ 
    .page-footer {
     display: flex;
-    align-items: center;
-    justify-self: center;
-  }
-
-  /* Set the presentation video properties. */
-  .presentation-video video {
-    display:block;
-    margin:0 auto;
-    width:60rem;
-    height:65rem;
+    /*align-items:center */
+    justify-content: center;
   }
   
      /* Set the properties for the fonts in the table. */
