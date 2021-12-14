@@ -41,7 +41,9 @@ Contact page is a page for the user to contact me. It includes a contact form fo
 ## Requirement
 - Need a browser 
 
-Note : The website has been tested with Chrome, Safari and Firefox.
+## Other information
+- The website has been tested with Chrome, Safari and Firefox.
+- You can visit my website at https://vigilant-neumann-1f4d3d.netlify.app
 
 
 
