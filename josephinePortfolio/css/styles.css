@@ -30,112 +30,11 @@
       grid-area: header;
   }
 
- 
-  /**
-  .page-footer {
-    position:fixed;
-    left:0;
-    bottom: 0;
-    width: 100%;
-    height:3rem;
-    background-color: var(--lightpurple);
-    color: white;
-    text-align: center;
-  }
-  **/
-
    /* declare footer for grid */
   .page-footer {
       grid-area: footer; 
       margin-top: 6rem;
   }
- 
-
-  /* declare content for grid */
-  .content {
-    grid-area: content;
-  }
-
-  
-  /* delcare experience-header for grid */
-  .experience-header {
-    grid-area:experienceHeader;
-  }
-
-  /* delcare experience-highlights for grid */
-  .experience-highlights {
-    grid-area: experienceHighlights;
-  }
-
-  /* delcare experience-details for grid */
-  .experience-details {
-    grid-area:experienceDetails;
-  }
-
-  /* delcare skills-header for grid */
-  .skills-header {
-    grid-area: skillsHeader;
-    margin-bottom: 4rem;
-  }
-
-  /*declare skills-description for grid */
-  .skills-description {
-    grid-area: skillsdescription;
-  }
-
-  /* delcare skills-details for grid */
-  .skills-details {
-    grid-area: skillsDetails;
-  }
-
-  /* delcare education-header for grid */
-  .education-header {
-    grid-area: educationHeader;
-    margin-bottom: 4rem;
-  }
-
-   /* delcare education-details for grid */
-  .education-details {
-    grid-area: educationDetails;
-  }
-
-  /* delcare contact-header for grid */
-  .contact-header {
-    grid-area: contactHeader;
-  }
-
-  /* delcare contact-form for grid */
-  /**
-  .contact-form {
-    grid-area: contactForm;
-  }
-  **/
-
-  /* delcare contact-form for grid */
-  .contact {
-    grid-area: contactForm;
-  }
-
-  /*declare bio-header for grid */
-  .bio-header {
-    grid-area: bioHeader;
-  }
-
-   /*declare bio-details for grid */
-   .bio-details {
-    grid-area: bioDetails;
-  }
-
-  /*declare resume header for grid */
-  .resume-header {
-    grid-area:resumeheader;
-  }
-
-  /*declare resume for grid */
-  .resume {
-    grid-area: resume;
-  }
-
 
   /* Heading 1 styles - set the font family and color */ 
   h1 {
@@ -189,10 +88,12 @@
     font-weight: bold;
   }
 
+  /* Setting the width of the horizontal line */
    .hr {
      width:100%;
    }
   
+
   /* Paragraph styles - set text indent for the first line
     of paragraph. */
   p {
@@ -218,8 +119,7 @@
       color : var(--darkpurple);
       font-weight: bold;
     }
-  
-    
+
 
   /* navigation bar styles - set the background color */
   nav {
@@ -251,17 +151,6 @@
     width:12rem;
   }
 
-
-  /* Main page image grid styles - set the page-image grid,
-    set the padding, float and width of the content in the grid. */
-  .main-page-image {
-    grid-area: page-image;
-    padding: 2rem;
-    max-width:100%;
-    height:auto;
-    /* width: 80%;*/
-  }
-
   /* Don't display medium and large image in main page */
   .image-medium, .image-large {
     display:none;
@@ -285,44 +174,6 @@
     display: block;
   }
 
-  /* Set the education image responsive to screen size. */
-  .education-image {
-    width:100%;
-    height:20rem;
-  }
-
-  /* Set the experience image properties. */
-  .experience-image {
-    width:23rem;
-    height:27rem;
-    padding:1rem;
-    float:left;
-  }
-
-  /* Set the skills image responsive to screen size. */
-  .skills-image {
-    width:100%;
-    height:20rem;
-  }
-
-   /* Set the contact image properties. */
-   .contact-image {
-    width:10rem;
-    height:15rem;
-    padding:1rem;
-    float:left;
-  }
-
-
-
-   /* Set the presentation video properties. */
-   .presentation-video video {
-    display:block;
-    margin:0 auto;
-    width:22rem;
-    height:27rem;
-  }
-
   .controls > * {
     /*float:center; */
     width:3.9%;
@@ -337,29 +188,10 @@
     color:var(--mediumblue);
   }
 
-  /* Set the properties of the table. */
-  /**
+  /** Set the properties of table **/
   .table {
-    border-collapse: separate;
-    border-spacing: 1rem;
-    margin: 1rem auto;
-  }
-
-  th {
-    font-size: 1.5rem;
-    font-family: 'Courier New', Courier, monospace;
-    color: blue;
-  }
-
-
-  td {
-    padding:0.2rem 0.5rem;
-    font-size: 0.7rem;
-    text-align: center;
-  }
-  **/
-
-  .table {
+    table-layout: auto;
+    width:50%;
     font-family:'Courier New', Courier, monospace;
     border-collapse:collapse;
     width:100%;
@@ -394,13 +226,6 @@
     color: white;
   }
   
-  .education-table {
-    border-collapse:collapse;
-    margin-left:auto;
-    margin-right:auto;
-  }
-
-  
   .checked {
     color : pink;
   }
@@ -408,200 +233,6 @@
   .form {
     width:30%;
   }
-
-  .experience-tbl {
-    background-color :rgba(0, 0, 0, 0);
-  }
-
-  .experience-tbl tr {
-    background-color :rgba(0, 0, 0, 0);
-  }
-
-  .experience-tbl :hover {
-    background-color :rgba(0, 0, 0, 0);
-  }
-
-  .experience-tbl td {
-    border-style:hidden!important;
-  }
-
-  .contact-table td {
-    border-style:hidden!important;
-  }
-
-  .contact-table tr:nth-child(even){
-    background-color: white;
-  }
-
-  .contact-table tr:hover tr:not(nth-last-child)
-  {
-    background-color: var(--lightgray);
-  } 
-
-  #skills-level {
-     display:block;
-    /* align-items:right;*/
-     justify-content: right;
-     top: 10px;
-     bottom:10px;
-  }
-
-  #skills-level div {
-    width:100px;
-    height:3.8rem;
-  }
-
-  .skills-description p {
-    text-align: justify;
-    line-height: 1.9;
-  }
-
-
-  .skillsstar {
-    margin-right:10px;
-    width:3rem;
-    height:5rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-    font-family:Arial, Helvetica, sans-serif;
-    color: #16b0e4;
-  }
-
-  .skills-description h3 {
-    color: var(--mediumblue);
-    font-size: 2rem;
-  }
-
-  .skills-details h3 {
-    position:relative;
-    color: var(--mediumblue);
-    font-size: 2rem;
-    right:1rem; 
-  }
-
-  /**
-
-  .table-h1 {
-    font-size:0.85rem;
-    font-weight: bold;
-  }
-
-  
-  .table-h2 {
-    font-weight:bold;
-    color: var(--chetwodeblue);
-  }
-
-  
-  .table-h3 {
-    font-style:italic ;
-  }
-
- 
-  .table-date {
-    font-weight:bold;
-  }
-   **/
-
-  /* Main page image (img) styles - set the image width and border properties. */
-  .main-page-image > img {
-    max-width:100%;
-    border: 10px solid var(--lightpurple);
-  }
-
-
-  /* Main page styles - set the display to use CSS grid,
-     set the properties and the layout of the grid. */
-  .main-page {
-    display: grid;
-    column-gap: 0;
-    row-gap: 3rem;
-    grid-template-areas: 
-    "header" 
-    "nav"
-    "page-image"
-    "content"
-    "footer";
-  }
-
-   /* Bio page styles - set the display to use CSS grid.
-     set the properties and the layouot of the grid. */
-     .bio-page {
-      display: grid;
-      column-gap:0;
-      row-gap:1rem;
-      grid-template-areas: 
-      "nav"
-      "bioHeader"
-      "bioDetails" 
-      "footer"
-    }
-
-  /* Work experience page styles - set the display to use CSS grid.
-     set the properties and the layouot of the grid. */
-  .experience-page {
-    display: grid;
-    column-gap:0;
-    row-gap:3rem;
-    grid-template-areas: 
-    "nav"
-    "experienceHeader"
-    "experienceHighlights" 
-    "experienceDetails"
-    "footer"
-  }
-  
-  /* Education page styles - set the display to use CSS grid.
-     set the properties and the layouot of the grid. */
-     .education-page {
-      display: grid;
-      grid-row-gap:100px;
-      column-gap:0;
-      row-gap: 0;
-      grid-template-areas: 
-      "nav"
-      "educationHeader"
-      "educationDetails" 
-      "footer"
-    }
-
-    .skills-page {
-      display: grid;
-      row-gap:0;
-      grid-column-gap: 5rem;
-      grid-template-columns: 2fr 2fr;
-      grid-template-areas: 
-      "nav nav"
-      "skillsHeader skillsHeader"
-      "skillsdescription  skillsDetails"
-      "footer footer"
-    }
-
-    /* Contact page styles - set the display to use CSS grid.Set the properties and the layouot of the grid. */
-     .contact-page {
-      display: grid;
-      column-gap:0;
-      row-gap:0rem;
-      grid-template-areas: 
-      "nav"
-      "contactHeader"
-      "contactForm" 
-      "footer"
-    }
-
-
-    /* Resume page styles - set the display to use CSS grid.Set the properties and the layouot of the grid. */
-    .resume-page {
-      display: grid;
-      column-gap:0;
-      row-gap:1rem;
-      grid-template-areas: 
-      "nav"
-      "resumeheader"
-      "resume"
-      "footer"
-    }
-
 
   .collapse-section {
     background-color: #777;
@@ -637,6 +268,349 @@
     color:var(--mediumblue)
   }
 
+   /* declare content for grid */
+   .content {
+    grid-area: content;
+  }
+
+/** Set the properties for the form **/
+/* Set the styles for the form */
+form {
+  width: 37rem;
+  height:36rem;
+  margin:0 auto; 
+  padding: 1rem;
+  box-sizing: border-box;
+  border: solid rgb(127, 134, 134) 0.8rem
+}
+
+
+/* Set the styles for the label */
+label {
+  font-size:large;
+  font-weight: bold;
+  color : rgb(15, 127, 197);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Set the styles for the input type=text*/
+input[type=text] {
+  font-family :Arial, Helvetica, sans-serif;
+  font-size: medium;
+  color: blue;
+  width: 100%;
+  padding:0.5rem;
+  margin:0;
+  display: inline-block;
+  box-sizing:border-box;
+  border: solid lightgray 0.2rem;
+  border-radius: 0.5rem;
+}
+
+/* Set the styles for the focus of the input*/
+input:focus {
+  background: lightgrey;
+  border-radius: 0.2rem;
+}
+
+/* Set the styles for the submit and reset buttons*/
+input[type=submit], input[type=reset] {
+  font-weight: bold;
+  font-style: normal;
+  font-size: large;
+  color : steelblue;
+  border-radius: 1.5rem;
+  border: 0.8rem solid;
+}
+
+#form-buttons {
+ vertical-align:middle;
+ text-align: center;
+ padding:3rem;
+}
+
+/* Change the color of the color when hover*/
+input[type=submit]:hover, input[type=reset]:hover  {
+  background-color: turquoise;
+}
+
+/* Set the style for error messages written to the DOM */
+#errormsg {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color : red;
+  font-weight: bold;
+  font-size:0.8rem;
+}
+
+
+/* Change the color of the label of the radio button when checked */
+input[type=radio]:checked+label {
+  display: inline-block;
+  background-color:thistle;
+  cursor:pointer;
+}
+
+/* Change the color of the label of the checkbox when checked */
+input[type=checkbox]:checked+label {
+  background-color: thistle;   
+}
+
+
+
+
+  /** Settings for the home page **/
+  /* Main page styles - set the display to use CSS grid,
+     set the properties and the layout of the grid. */
+     .main-page {
+      display: grid;
+      column-gap: 0;
+      row-gap: 3rem;
+      grid-template-areas: 
+      "nav" 
+      "header"
+      "page-image"
+      "content"
+      "footer";
+    }
+  
+    /* Main page image grid styles - set the page-image grid,
+      set the padding, float and width of the content in the grid. */
+      .main-page-image {
+        grid-area: page-image;
+        padding: 2rem;
+        max-width:100%;
+        height:auto;
+        /* width: 80%;*/
+      }
+  
+    /* Change the properties of the main-page-image division and
+        add a border around the image in the main page. */
+    .main-page-image {
+          width:auto;
+          margin-left:auto;
+          margin-right:auto;
+         /** border: 12px solid var(--aquamarine)**/
+    }
+  
+         
+    /* Main page image (img) styles - set the image width and border properties. */
+    .main-page-image > img {
+      max-width:100%;
+      border: 10px solid var(--lightpurple);
+    }
+
+    /** Settings for the Bio page **/
+
+    /*declare bio-header for grid */
+  .bio-header {
+    grid-area: bioHeader;
+  }
+
+   /*declare bio-details for grid */
+   .bio-details {
+    grid-area: bioDetails;
+  }
+  
+  /* Bio page styles - set the display to use CSS grid.
+     set the properties and the layouot of the grid. */
+  .bio-page {
+      display: grid;
+      column-gap:0;
+      row-gap:1rem;
+      grid-template-areas: 
+      "nav"
+      "bioHeader"
+      "bioDetails" 
+      "footer"
+  }
+
+/** Settings for Education page **/
+/* Education page styles - set the display to use CSS grid.
+     set the properties and the layouot of the grid. */
+.education-page {
+    display: grid;
+    grid-row-gap:100px;
+    column-gap:0;
+    row-gap: 0;
+    grid-template-areas: 
+    "nav"
+    "educationHeader"
+    "educationDetails" 
+    "footer"
+}
+
+/* delcare education-header for grid */
+.education-header {
+  grid-area: educationHeader;
+  margin-bottom: 4rem;
+}
+
+ /* delcare education-details for grid */
+.education-details {
+  grid-area: educationDetails;
+}    
+    
+/* Set the education image responsive to screen size. */
+.education-image {
+  width:100%;
+  height:20rem;
+}
+
+/* Set the properties of education table */
+.education-table {
+  border-collapse:collapse;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/** Settings for the Resume page **/
+/*declare resume header for grid */
+.resume-header {
+  grid-area:resumeheader;
+}
+
+/*declare resume for grid */
+.resume {
+  grid-area: resume;
+}
+
+ /* Resume page styles - set the display to use CSS grid.Set the properties and the layouot of the grid. */
+ .resume-page {
+  display: grid;
+  column-gap:0;
+  row-gap:1rem;
+  grid-template-areas: 
+  "nav"
+  "resumeheader"
+  "resume"
+  "footer"
+}
+
+
+/** Settings for the Skills page **/
+/* delcare skills-header for grid */
+.skills-header {
+  grid-area: skillsHeader;
+  margin-bottom: 4rem;
+}
+
+/*declare skills-description for grid */
+.skills-description {
+  grid-area: skillsdescription;
+}
+
+/* delcare skills-details for grid */
+.skills-details {
+  grid-area: skillsDetails;
+}
+
+.skills-page {
+  display: grid;
+  row-gap:0;
+  grid-column-gap: 5rem;
+  grid-template-columns: 2fr 2fr;
+  grid-template-areas: 
+  "nav nav"
+  "skillsHeader skillsHeader"
+  "skillsdescription  skillsDetails"
+  "footer footer"
+}
+
+
+/* Set the skills image responsive to screen size. */
+.skills-image {
+  width:100%;
+  height:20rem;
+}
+
+#skills-level {
+  display:block;
+ /* align-items:right;*/
+  justify-content: right;
+  top: 10px;
+  bottom:10px;
+}
+
+#skills-level div {
+ width:100px;
+ height:3.8rem;
+}
+
+.skills-description p {
+ text-align: justify;
+ line-height: 1.9;
+}
+
+
+.skillsstar {
+ margin-right:10px;
+ width:3rem;
+ height:5rem;
+ font-size: 1.2rem;
+ font-weight: bold;
+ font-family:Arial, Helvetica, sans-serif;
+ color: #16b0e4;
+}
+
+.skills-description h3 {
+ color: var(--mediumblue);
+ font-size: 2rem;
+}
+
+.skills-details h3 {
+ position:relative;
+ color: var(--mediumblue);
+ font-size: 2rem;
+ right:1rem; 
+}
+
+/** Settings for Contact page **/
+/* delcare contact-header for grid */
+.contact-header {
+  grid-area: contactHeader;
+}
+
+/* delcare contact-form for grid */
+.contact {
+  grid-area: contactForm;
+}
+
+
+ /* Contact page styles - set the display to use CSS grid.Set the properties and the layouot of the grid. */
+ .contact-page {
+  display: grid;
+  column-gap:0;
+  row-gap:0rem;
+  grid-template-areas: 
+  "nav"
+  "contactHeader"
+  "contactForm" 
+  "footer"
+}
+
+
+/* Set the contact image properties. */
+.contact-image {
+  width:10rem;
+  height:15rem;
+  padding:1rem;
+  float:left;
+}
+
+
+.contact-table td {
+  border-style:hidden!important;
+}
+
+.contact-table tr:nth-child(even){
+  background-color: white;
+}
+
+.contact-table tr:hover tr:not(nth-last-child)
+{
+  background-color: var(--lightgray);
+} 
+  
 
 /* Device width is greater than 640px and less than 1280px, set the grid properties and layout. 
    and set the properties of some of the elements in the pages*/
@@ -691,14 +665,6 @@
      margin-right: auto;
    }
 
-   /* Change the properties of the main-page-image division and
-      add a border around the image in the main page. */
-   .main-page-image {
-    width:auto;
-    margin-left:auto;
-    margin-right:auto;
-    border: 12px solid var(--aquamarine)
-   }
 
    /* Move the content to the center. */
    .content {
@@ -791,9 +757,15 @@
   
    .image-large {
      display:block !important;
-     width:60%;
-     height:60%;
+     margin-left:auto;
+     margin-right:auto;
+     width:50%;
    } 
+
+   .image-large img {
+    position:relative;
+    top:-10px;
+   }
 
    .profile-image {
      display:block !important;
@@ -801,15 +773,7 @@
      margin-right: auto;
    }
 
-   /* Change the properties of the main-page-image division and
-      add a border around the image in the main page. */
-   .main-page-image {
-    width:auto;
-    margin-left:auto;
-    margin-right:auto;
-    border: 12px solid var(--mediumpurple)
-   }
-
+  
    /* Move the content to the center. */
    .content {
      text-align: center;
